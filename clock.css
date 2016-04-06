@@ -1,0 +1,15 @@
+#hands {
+    position: absolute;
+}
+
+#face {
+    position: absolute;
+}
+
+#pendulum {
+    position: absolute;
+}
+
+#clock {
+    opacity: 1.0;
+}
