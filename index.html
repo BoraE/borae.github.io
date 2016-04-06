@@ -1,29 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- <html manifest="cache.manifest"> -->
 <html>
-<head>
-    <title>Wall Clock</title>
-    <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
+  <head>
+    <meta charset="utf-8">
+    <!-- iPhone settings -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <script type="text/javascript" src="clock.js"></script>
-
-    <script>
-        window.onload = function () {
-            paintClockFace();
-            paintClockHands();
-            window.setInterval(paintClockHands, 1000);
-            pendulum();
-        };
-    </script>
-
-    <link rel="stylesheet" type="text/css" href="clock.css">
-</head>
-<body>
-<div id="clock">
-    <canvas id="face" height="420px" width="420px"></canvas>
-    <canvas id="hands" height="420px" width="420px"></canvas>
-    <canvas id="pendulum" height="420px" width="420px"></canvas>
-</div>
-</body>
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="clock.css">
+  </head>
+  <body>
+    <div id="clock">
+      <canvas id="face" height="400" width="400"></canvas>
+      <canvas id="pendulum" height="400" width="400"></canvas>
+      <canvas id="hands" height="400" width="400"></canvas>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="clock.js"></script>
+  </body>
 </html>

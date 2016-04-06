@@ -1,15 +1,30 @@
-#hands {
-    position: absolute;
-}
+@import url(reset.css);
 
-#face {
-    position: absolute;
-}
-
-#pendulum {
-    position: absolute;
+html, body {
+  height: 100%;
 }
 
 #clock {
-    opacity: 1.0;
+  position: relative;
+  margin: auto auto;
+  width: 400px;
+  height: 400px;
+  // border: solid 1px red;
+}
+
+canvas {
+  position: absolute;
+  //border-radius: 1000px;
+}
+
+#face {
+  // border: solid 1px red;
+}
+
+#hands {
+  // border: solid 1px black;
+}
+
+#pendulum {
+  // border: solid 1px black;
 }
